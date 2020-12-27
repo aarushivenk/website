@@ -16,20 +16,20 @@
 
 <body style="font-family:'Karla'" class="leading-relaxed">
   <header style="font-family:'Spartan'" class="grid lg:px-40 grid-cols-2 py-6 lg:text-lg">
-    <div class="pr-4 font-semibold">AARUSHI</div>
+    <div class="font-semibold">AARUSHI</div>
     <div class="grid grid-cols-3 gap-20 md:gap-10 justify-items-end">
       <a href="about.html" class="hover:text-gray-400">about</a>
       <a href="paintings.html" class="hover:text-gray-400">personal</a>
       <a href="img/Resume2019.pdf" class="hover:text-gray-400">resume</a>
     </div>
   </header>
-  <a HREF="index.html"><svg class="w-10 h-10 my-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- <a HREF="index.html"><svg class="w-10 h-10 my-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z" fill="#323232" />
-    </svg></a>
+    </svg></a> -->
 
   <container class="mx-auto">
-    <section class="bg-red-400 w-screen">
-      <img class="place-self-center w-screen h-72 md:h-96 p-6" src="img/Group 10 (1).svg" alt="mockups">
+    <section>
+      <img class="place-self-center pt-10  bg-red-400 w-full h-auto self-center align-bottom" src="img/HealthandWellnesscover.png" alt="mockups">
     </section>
     <section>
       <div class="md:mx-40 lg:mx-60 mx-10 md:grid md:grid-cols-2 md:gap-10">
@@ -54,10 +54,10 @@
         </div>
       </div>
     </section>
-    <section class="md:mx-40 lg:mx-96 -mx-10 mt-10">
-      <div class="grid grid-cols-2 gap-10 bg-red-400 p-16 md:rounded-lg">
+    <section class="md:mx-40 lg:mx-96 mt-10">
+      <div class="grid grid-rows-2 bg-red-400 p-16 md:rounded-lg">
         <div class="place-self-end md:place-self-center">
-          <h1 style="font-family:'Vollkorn'" class="text-4xl font-bold text-white">Overview</h1>
+          <h1 style="font-family:'Vollkorn'" class="text-2xl md:text-4xl font-bold text-white">Overview</h1>
         </div>
         <div>
           <p class="md:text-2xl text-white">To determine what makes a good health and fitness app, I wanted to take a 3-pronged approach: compile app store feedback, user research, and use Figma to do a little bit of redesigning. </p>
@@ -70,11 +70,6 @@
       
       <p class="md:text-lg">Given my initial review of the app and comparing them to apple’s health app, I conducted 6 in-depth interviews with people of varying ages (19-55) and of varying exercise habits (low-high) for their opinions of each app. 
       </p>
-      <div class="my-10 grid grid-cols-3 md:gap-10">
-        <img src="img/Pacer Logo.svg" alt="Pacer Logo">
-        <img src="img/StepsApp Logo.svg" alt="StepsApp Logo">
-        <img src="img/Pedometer++ Logo.svg" alt="Pedometer++ Logo">
-      </div>
       <div class="mt-5">
         <h2 style="font-family:'Vollkorn'" class=" text-lg  md:text-2xl">General</h2>
         <ul class="list-disc md:text-lg pl-10 ">
@@ -97,7 +92,72 @@
     <section class="md:mx-40 lg:mx-60 mx-10">
       <h1 style="font-family:'Vollkorn'" class="mt-10 font-semibold text-xl md:text-2xl">
         Results</h1>
-        <img src="img/table.svg" alt="comparison table">
+        <table class="table-fixed my-20">
+          <thead class="text-2xl">
+            <tr>
+              <th class="w-1/4">Criteria</th>
+              <th class="w-1/4"><img class="w-12 h-12" src="img/pacer logo.png"></th>
+              <th class="w-1/4"><img class="w-12 h-12" src="img/stepsapp logo.png"></th>
+              <th class="w-1/4"><img class="w-12 h-12" src="img/pedometer++ logo.png"></th>
+            </tr>
+          </thead>
+          <tbody class="text-2xl">
+            <tr>
+              <td>Rating</td>
+              <td>4.9/5</td>
+              <td>4.8/5</td>
+              <td>4.6/5</td>
+            </tr>
+            <tr>
+              <td># of Ratings</td>
+              <td>128,340</td>
+              <td>83,755</td>
+              <td>29,130</td>
+            </tr>
+            <tr>
+              <td># of Screens</td>
+              <td>20</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Strengths</td>
+              <td><ul class="list-disc">
+                <li>lots of features</li>
+                <li>informative stats</li>
+              </ul></td>
+              <td><ul class="list-disc">
+                <li>simple interface</li>
+                <li>color palette</li>
+              </ul></td>
+              <td><ul class="list-disc">
+                <li>simple interface</li>
+                <li>motivating</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>Weaknesses</td>
+              <td><ul class="list-disc">
+                <li>complicated interface</li>
+                <li>color palette</li>
+                <li>intimidating</li>
+              </ul></td>
+              <td><ul class="list-disc">
+                <li>"hidden" features</li>
+              </ul></td>
+              <td><ul class="list-disc">
+                <li>color palette</li>
+                <li>not many features</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>Avg. User Rating</td>
+              <td>6.2/10</td>
+              <td>7.5/10</td>
+              <td>4.8/10</td>
+            </tr>
+          </tbody>
+        </table>
         <div class="mt-5">
           <h2 style="font-family:'Vollkorn'" class=" text-lg  md:text-2xl">Key Takeaways</h2>
           <ul class="list-disc md:text-lg pl-10 ">
@@ -113,15 +173,15 @@
         Audience</h1>
       <p class="md:text-lg">Based on the users’ responses, I was able to identify 3 different users, 1 for each app. Pedometer++ attracted more of an older, less tech-savvy audience. StepsApp seemed more towards those who wanted to track a little bit more than their steps and could use a little extra motivation. Pacer was for those who were more dedicated to fitness, specifically those who looked for the most out of their apps. 
       </p>
-      <img class="mt-5" src="img/Michelle-Pacer.svg" alt="Pacer User Persona">
+      <img class="mt-5" src="img/Michelle-Pacer.jpg" alt="Pacer User Persona">
       <div class="grid grid-cols-1 ">
         <p class="place-self-center">Pacer User</p>
       </div>
-      <img class="mt-5" src="img/Steph-StepsApp.svg" alt="StepsApp User Persona">
+      <img class="mt-5" src="img/Steph-StepsApp.jpg" alt="StepsApp User Persona">
       <div class="grid grid-cols-1 ">
         <p class="place-self-center">StepsApp User</p>
       </div>
-      <img class="mt-5" src="img/Vern-Pedometer++.svg" alt="Pedometer++ User Persona">
+      <img class="mt-5" src="img/Vern-Pedometer++.jpg" alt="Pedometer++ User Persona">
       <div class="grid grid-cols-1 ">
         <p class="place-self-center">Pedometer++ User</p>
       </div>
@@ -130,6 +190,36 @@
       <h1 style="font-family:'Vollkorn'" class="mt-10 font-semibold text-xl md:text-2xl">
         How can I improve upon App Design?</h1>
       <p>I took to Figma to redesign the landing pages of the 3 apps based on my takeaways from the user research</p>
+      <div>
+      <div class="grid grid-cols-2 gap-10">
+        <div class="place-self-center">
+          <h1 class="text-2xl font-semibold">PACER</h1>
+          <p class="text-2xl mt-10">Overall, Pacer has many positive features and is widely-liked by its users. During my research, I found that in their initial impressions of the app, Pacer's biggest issue was a confusing user-flow.</p>
+        </div>
+        <img class="mt-5" src="img/Pacer-comments.jpg" alt="Pacer comments">
+      </div>
+      <img class="h-1/2 w-1/2" src="img/Pacer-revisions.jpg" alt="Pacer Revisions">
+    </div>
+    <div>
+      <div class="grid grid-cols-2 gap-10">
+        <div class="place-self-center">
+          <h1 class="text-2xl font-semibold">StepsApp</h1>
+          <p class="text-2xl mt-10">StepsApp was the app seen most favorably through the research. Its sleek and minimalistic appearance is quite appealing to a variety of groups. Based on the strengths of the other apps, I proposed some minor suggestions.</p>
+        </div>
+        <img class="mt-5" src="img/StepsApp-comments.jpg" alt="StepsApp comments">
+      </div>
+      <img class="mt-10" src="img/StepsApp-revisions.jpg" alt="StepsApp Revisions">
+    </div>
+    <div>
+      <div class="grid grid-cols-2 gap-10">
+        <div class="place-self-center">
+          <h1 class="text-2xl font-semibold">Pedometer++</h1>
+          <p class="text-2xl mt-10">Pedometer++ was the easiest app to follow in the three. While it's simpleness was a positive, some users felt it didn't have enough features to draw them towards it. One of its biggest strengths were in the awards, which are clever ways of motivating its users.</p>
+        </div>
+        <img class="mt-5" src="img/Pedometer++-comments.jpg" alt="Pedometer++ comments">
+      </div>
+      <img class="mt-10" src="img/Pedometer++-revisions.jpg" alt="Pedometer++ Revisions">
+    </div>
       </section>
 
       <section class="md:mx-40 lg:mx-60 mx-10">
