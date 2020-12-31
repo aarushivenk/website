@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/tailwind.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
-<body style="font-family:'Spartan'" class="lg:px-40">
-  <header class="grid grid-cols-2 py-6 lg:text-lg">
-    <div class="pr-4 font-semibold">AARUSHI</div>
-    <div class="grid grid-cols-3 gap-20 md:gap-10 justify-items-end">
-      <a href="about.html" class="hover:text-gray-400">about</a>
-      <a href="paintings.html" class="hover:text-gray-400">personal</a>
-      <a href="img/Resume2019.pdf" class="hover:text-gray-400">resume</a>
-    </div>
-  </header>
-  <a HREF="index.html"><svg class="w-10 h-10 my-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z" fill="#323232" />
-    </svg></a>
 
-  <section class="p-6 md:flex md:flex-row">
+<body style="font-family:'Open Sans'" class="md:text-lg">
+  <container class="mx:auto">
+    <header class="p-10 grid grid-cols-2">
+      <div class="grid grid-cols-2 justify-self-start">
+        <a href="index.html"><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg></a>
+        <div>AARUSHI</div>
+      </div>
+      <a href="img/Resume2019.pdf" class="justify-self-end">
+        resume
+      </a>
+    </header>
+  </container>
+  <section class="mx-5 md:mx-auto max-w-screen-md">
+    <div class="md:grid md:grid-cols-2 md:gap-10">
     <div>
-      <h1 class="font-bold text-4xl mb-6">Hi I'm Aarushi</h1>
-      <p class="text-xl">I’m a sophomore with interests in branding and wellness. I currently study biology and computer science at Duke University, where I’ve been busy taking charge of a reproductive health initiative, doing experiments on worms, and leading my dance team. Two of my biggest passions are in the arts. I’m an avid doodler and a classically trained dancer. </p>
+      <div class="font-bold text-2xl mb-10 ">Hi I'm Aarushi!</div>
+      <div class="">I’m a sophomore with interests in branding and wellness. I currently study biology and computer science at
+        Duke University, where I’ve been busy taking charge of a reproductive health initiative, doing experiments on
+        worms, and leading my dance team. Two of my biggest passions are in the arts. I’m an avid doodler and a
+        classically trained dancer. </div>
     </div>
-    <img class="mt-6 lg:w-1/2 h-auto" src="img/IMG_4358.JPG" alt="profile image">
-
+  
+    <img class="place-self-center" src="img/IMG_4358.JPG">
+  </div>
   </section>
+
 </body>
+
 </html>
