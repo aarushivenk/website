@@ -10302,7 +10302,6 @@ video {
   border-radius: 1.5rem;
 }
 
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -10527,6 +10526,9 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
 
 .rounded-bl {
   border-bottom-left-radius: 0.25rem;
@@ -10609,7 +10611,7 @@ video {
 }
 
 .rounded-bl-3xl {
-  border-bottom-left-radius: 1.5 rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-tl-full {

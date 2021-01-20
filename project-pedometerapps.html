@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/tailwind.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=PT+Mono&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <title>Health Apps | Aarushi</title>
+  
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+  </style>
+</head>
+
+<body style="font-family: Inter" class="antialiased">
+  <header style=" font-family: PT Mono"
+    class="lg:px-16 text-base font-medium px-6 flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="index.html">
+        AARUSHI</a>
+    </div>
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <input type="checkbox" class="hidden" id="menu-toggle" />
+
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between  pt-4 lg:pt-0">
+          <li>
+            <a href="index.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">work</a>
+          </li>
+          <li>
+            <a href="art.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">art</a>
+          </li>
+          <li>
+            <a href="aboutme.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">me</a>
+          </li>
+          <li>
+            <a href="AarushiVenkatakrishnan_resume2021.pdf"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">resume</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+    </div>
+  </header>
+  <div class="bg-green-50 grid grid-cols-2">
+    <div class="mx-5 place-self-center">
+      <h1 class="lg:text-8xl  text-4xl font-semibold">HEALTH<br>APPS</h1>
+      <h2 style="font-family: PT Mono" class="font-medium md:text-lg my-4">Review of popular step-trackers</h2>
+    </div>
+    <img class="place-self-center" src="img/collageofpedometerapps.png" alt="Pedomater App Mockups">
+  </div>
+  <div class="max-w-3xl mx-auto px-8 md:px-0 my-16">
+    <div class="grid md:grid-cols-4 grid-row-4 gap-4 ">
+      <div>
+        <div class="md:text-xl font-semibold">ROLE</div>
+        <div class="md:text-xl ">User Research and Redesign</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">APPS</div>
+        <div class="md:text-xl ">Pedometer++, Pacer, StepsApp</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">TIMELINE</div>
+        <div class="md:text-xl ">2 weeks (Dec 2020)</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">TOOLS</div>
+        <div class="md:text-xl ">Figma, Surveys</div>
+      </div>
+    </div>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Overview</h1>
+      <p class="my-6 md:text-lg">To determine what makes a good health and fitness app, I wanted to take a 3-pronged approach: compile app store feedback, user research, and use Figma to do a little bit of redesigning.</p>
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Background</h1>
+      <p class="my-6 md:text-lg">There are more than 318,000 health and wellness apps currently in the app store, with 200+ being added each day. Especially due to COVID, more and more of us have turned to the virtual world to guide us on our health journeys. Home gym and workout equipment has had skyrocketing sales as people aim to improve or create healthy habits at home. One popular and easy way of keeping healthy is by using a habit tracker app.</p>
+      <p class="my-6 bg-gray-100 p-6 rounded-lg md:text-lg">With many on the market, I wanted to look at 3 pedometer apps-Pacer, StepsApp, Pedometer++-and determine what draws user attention and retains users.</p>
+      <p class="my-6 md:text-lg">A pedometer itself is a relatively simple concept, and on most iPhones, users already have a built-in health app that does just that. What I wanted to know was what additional features, interface, etc, gives an app the edge to attract users in.</p>
+    </section>
+
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">User Research</h1>
+      <p class="my-6  md:text-lg">Given my initial review of the app and comparing them to apple’s health app, I conducted 6 in-depth interviews with people of varying ages (19-55) and of varying exercise habits (low-high) for their opinions of each app.
+      </p>
+      <h2 class="font-semibold">General</h2>
+      <ul class=" my-6 list-decimal md:mx-8">
+        <li>Have you used health and fitness apps before?</li>
+        <li>How active would you say you are?</li>
+        <li>What is the biggest factor behind exercising for you?</li>
+        <li>Would you ever want to download a habit-tracker app?</li>
+        <li>What components would you expect to see in a step-counter app?
+        </li>
+      </ul>
+      <h2 class=" my-6 font-semibold">App-Specific</h2>
+      <ul class="list-decimal md:mx-8">
+        <li>Are you able to find all of the expected components of a habit-tracker app?</li>
+        <li>What are your thoughts (positive and negative) about these apps?</li>
+      </ul>
+  
+      <h2 class=" my-6 font-semibold">Key-Takeaways</h2>
+      <ul class="list-disc md:mx-8">
+        <li>An attracting interface can greatly influence a user</li>
+        <li>Adding more features does not necessarily increase the attractiveness of an interface</li>
+        <li>Buttons should be intuitive and simple-you don’t want your users to struggle to find anything</li>
+      </ul>
+      <div class="grid grid-cols-3 gap-6">
+       
+        <div class="bg-gray-100 rounded-lg p-8 my-6">
+          <h2 class="text-center my-6 text-xl font-semibold">Pacer</h2>
+      <ul class="list-disc md:mx-8">
+        <li>App Store Rating: 4.5/5</li>
+        <li>User Rating: 6.2/10</li>
+        <li>Lots of features</li>
+        <li>Informative stats</li>
+        <li>Complicated interface</li>
+        <li>Weak color palette</li>
+        <li>Intimidating</li>
+      </ul>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-8 my-6">
+          <h2 class="text-center text-xl my-6 font-semibold">StepsApp</h2>
+      <ul class="list-disc md:mx-8">
+        <li>App Store Rating: 4.8/5</li>
+        <li>User Rating: 7.5/10</li>
+        <li>Simple interface</li>
+        <li>Strong color palette</li>
+        <li>Hard-to-access features</li>
+      </ul>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-8 my-6">
+          <h2 class="text-center my-6 text-xl font-semibold">Pedometer++</h2>
+      <ul class="list-disc md:mx-8">
+        <li>App Store Rating: 4.6/5</li>
+        <li>User Rating: 4.8/10</li>
+        <li>Simple Interface</li>
+        <li>Motivating</li>
+        <li>Weak color palette</li>
+        <li>Not enough features</li>
+      </ul>
+        </div>
+      </div>
+      
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Audience</h1>
+      <p class="my-6 md:text-lg">Based on the users’ responses, I was able to identify 3 different users, 1 for each app. Pedometer++ attracted more of an older, less tech-savvy audience. StepsApp seemed more towards those who wanted to track a little bit more than their steps and could use a little extra motivation. Pacer was for those who were more dedicated to fitness, specifically those who looked for the most out of their apps.</p>
+      <h2 class="font-semibold">Pacer User</h2>
+      <img class="p-6 my-6 bg-gray-100 rounded-lg" src="img/MichelleFlores-Paceruser.png" alt="Michelle Flores, Pacer user">
+      <h2 class="font-semibold">StepsApp User</h2>
+      <img class="p-6 my-6 bg-gray-100 rounded-lg" src="img/StephanieGomez-StepsAppuser.png" alt="Stephanie Gomez, StepsApp user">
+      <h2 class="font-semibold">Pedometer++ User</h2>
+      <img class="p-6 my-6 bg-gray-100 rounded-lg" src="img/VernAllen-pedometer+user.png" alt="Vern Allen, Pedometer+ user">
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Redesign</h1>
+      <p class="my-6 md:text-lg">I took to Figma to redesign the landing pages of the 3 apps based on my takeaways from the user research.</p>
+      <div class="grid grid-cols-2 gap-10">
+        <div class="place-self-center">
+          <h1 class="text-2xl font-semibold">PACER</h1>
+          <p class="text-sm md:text-base mt-5 md:mt-10">Overall, Pacer has many positive features and is widely-liked by its users. During my research, I found that in their initial impressions of the app, Pacer's biggest issue was a confusing user-flow.</p>
+        </div>
+        <img class="my-6" src="img/Pacer-comments.jpg" alt="Pacer comments">
+      </div>
+      
+      <div class="grid grid-cols-1">
+      <img class="place-self-center" src="img/Pacer-revisions.jpg" alt="Pacer Revisions">
+    </div>
+    <p class="text-center text-sm my-6 ">Pacer Revisions</p>
+      
+      <div class="grid grid-cols-2 gap-10">
+        <div class="place-self-center">
+          <h1 class="text-2xl font-semibold">STEPSAPP</h1>
+          <p class="text-sm md:text-base mt-5 md:mt-10">StepsApp was the app seen most favorably through the research. Its sleek and minimalistic appearance is quite appealing to a variety of groups. Based on the strengths of the other apps, I proposed some minor suggestions.
+
+          </p>
+        </div>
+        <img class="my-6" src="img/StepsApp-comments.jpg" alt="StepsApp comments">
+      </div>
+      
+      <div class="grid grid-cols-1">
+      <img class="place-self-center" src="img/StepsApp-revisions.jpg" alt="Pacer Revisions">
+    </div>
+    <p class="text-center text-sm my-6 ">StepsApp Revisions</p>
+      
+        <div class="grid grid-cols-2 gap-10">
+          <div class="place-self-center">
+            <h1 class="text-2xl font-semibold">PEDOMETER++</h1>
+            <p class="text-sm md:text-base mt-5 md:mt-10">Pedometer++ was the easiest app to use in the three. While it's simpleness was a positive, some users felt it didn't have enough features to draw them towards it. One of its biggest strengths were in the awards, which are clever ways of motivating its users.
+
+
+  
+            </p>
+          </div>
+          <img class="my-6" src="img/Pedometer++-comments.jpg" alt="Pedometer++ comments">
+        </div>
+        
+        <div class="grid grid-cols-1">
+        <img class="place-self-center" src="img/Pedometer++-revisions.jpg" alt="Pedometer++ Revisions">
+      </div>
+      <p class="text-center text-sm my-6 ">Pedometer++ Revisions</p>
+      
+     
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Reflection</h1>
+      <p class="my-6 md:text-lg mb-36">I saw how apps were able to define their target audience by the features they were including, understanding what worked and what didn’t work.<br><br>
+
+        I learned about the importance of colors and sizing, especially about their influence on a user’s thought process.<br><br>
+        
+        I experienced the importance of a landing page-they can determine how someone feels about the entire app. 
+      
+      </p>
+    </section>
+
+  </div>
+</body>
+
+</html>

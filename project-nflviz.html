@@ -5,205 +5,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/tailwind.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=PT+Mono&display=swap"
     rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <title>NFLViz by Aarushi</title>
-  <link rel="shortcut icon" type="image/jpg" href="img/favicon1.ico"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <title>NFLViz | Aarushi</title>
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+  </style>
 </head>
 
-<body style="font-family:'Open Sans'" class="md:text-lg">
-  <container class="mx:auto">
-    <header class="p-10 grid grid-cols-2">
-      <div class="grid grid-cols-2 justify-self-start">
-        <a href="index.html"><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg></a>
-        <div>AARUSHI</div>
-      </div>
-      <a href="AarushiVenkatakrishnan_resume2021.pdf" class="justify-self-end">
-        resume
-      </a>
-    </header>
-  </container>
-  <section class=" hover:cursor-pointer bg-blue-400">
-    <a href="https://www.nflviz.com">
-      <div class="grid grid-cols-2">
-        <div class="justify-self-end text-white my-20 md:my-40">
+<body style="font-family: Inter" class="antialiased">
+  <header style="font-family: PT Mono"
+    class="lg:px-16 text-base font-medium px-6 flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="index.html">
+        AARUSHI</a>
+    </div>
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <input type="checkbox" class="hidden" id="menu-toggle" />
 
-          <h1 class="text-right text-2xl md:text-6xl font-bold">NFLVIZ.COM</h1>
-          <p class="text-right md:text-2xl  mt-4 md:mt-10">Complete conception and design of a <br> data visualization
-            site.</p>
-        </div>
-        <div class="place-self-center mx-4 md:mx-10"><img src="img/NFLViz-Mockup.svg" alt="NFLViz.com mockup"></div>
-      </div>
-    </a>
-  </section>
-
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-      <div class="flex flex-col">
-        <div class="flex flex-row">
-          <h1 class="w-1/4 font-bold text-blue-400">OVERVIEW</h1>
-          <p class="pl-2 w-3/4">NFLViz.com is a site dedicated to using football data
-            to display custom fantasy visualizations. I collaborated with the developer to prepare for an early 2021
-            launch.
-            Together, we went through the design process to create and implement the NFLViz brand.</p>
-        </div>
-        <div class="flex flex-row mt-5">
-          <h1 class="w-1/4 font-bold text-blue-400">TEAM</h1>
-          <p class=" w-3/4">Aarushi Venkatakrishnan, UX/UI <br>Advaith Venkatakrishnan, Developer</p>
-        </div>
-        <div class="flex flex-row mt-5">
-          <h1 class="w-1/4 font-bold text-blue-400">TIMELINE</h1>
-          <p class="w-3/4">1 month</p>
-        </div>
-      </div>
-
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between  pt-4 lg:pt-0">
+          <li>
+            <a href="index.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">work</a>
+          </li>
+          <li>
+            <a href="art.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">art</a>
+          </li>
+          <li>
+            <a href="aboutme.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">me</a>
+          </li>
+          <li>
+            <a href="AarushiVenkatakrishnan_resume2021.pdf"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">resume</a>
+          </li>
+        </ul>
+      </nav>
 
     </div>
 
 
-  </section>
-
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-
-      <p class="font-bold text-2xl  text-blue-400">"NFLViz is a data visualization site. The plan is for the site to
-        become a one-stop shop for all things football." </p>
-
     </div>
-  </section>
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-      <p><span class="font-bold text-blue-400">TASK |</span> After learning more about the mission of NFLViz, I set out
-        to understand my role. We needed to design a responsive data visualization site that allows for future
-        scalability. More so, I needed to create the <span class="text-blue-400">NFLViz brand.</span></p>
-      <p class="mt-5 font-bold text-blue-400">Requirements:</p>
-      <ul class="list-decimal mt-2 ml-5">
+  </header>
+  <div class="bg-blue-100 grid grid-cols-2">
+    <div class="mx-5 place-self-center">
+      <h1 class="lg:text-8xl text-4xl font-semibold">NFLVIZ</h1>
+      <h2 style="font-family: PT Mono" class="font-medium md:text-lg my-4">Football meets data viz</h2>
+    </div>
+    <img class="place-self-center" src="img/Group 2.png" alt="NFLViz mockup on a laptop and phone">
+  </div>
+  <div class="max-w-3xl mx-auto px-8 md:px-0 my-16">
+    <div class="grid md:grid-cols-4 grid-row-4 gap-4 ">
+      <div>
+        <div class="md:text-xl font-semibold">ROLE</div>
+        <div class="md:text-xl ">Lead Design</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">TEAM</div>
+        <div class="md:text-xl ">Advaith Venkatakrishnan, Developer</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">TIMELINE</div>
+        <div class="md:text-xl ">1 month (Dec 2020 - Jan 2021)</div>
+      </div>
+      <div>
+        <div class="md:text-xl font-semibold">TOOLS</div>
+        <div class="md:text-xl ">Figma</div>
+      </div>
+    </div>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Overview</h1>
+      <p class="my-6 md:text-lg">NFLViz.com is a site dedicated to using football data to display custom fantasy
+        visualizations. I collaborated with the developer to prepare for an early 2021 launch. Together, we went through
+        the design process to create and implement the NFLViz brand.</p>
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">The Task</h1>
+      <p class="my-6 bg-gray-100 p-6 rounded-lg md:text-lg">"NFLViz is a data visualization site. The plan is for the
+        site to become a one-stop shop for all things football."</p>
+      <p class="my-6 md:text-lg">After learning more about the mission of NFLViz, I set out to understand my role. We
+        needed to design a responsive data visualization site that allows for future scalability. More so, I needed to
+        create the NFLViz brand.</p>
+      <h2 class="font-semibold">Requirements</h2>
+      <ul class="list-decimal md:mx-8">
         <li>Designs should work for both mobile and desktop</li>
         <li>Visualizations should be screenshot-ready</li>
         <li>Logo should be usable across multiple types of media</li>
         <li>Allow for more fields to be easily incorporated (both regarding types of visualization and number)</li>
         <li>Entice the audience to use our service over/in addition to existing ones</li>
       </ul>
-    </div>
-  </section>
-  <section>
+    </section>
 
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-      <p"><span class="font-bold text-blue-400">DETERMINING OUR AUDIENCE |</span> While I’m definitely not new to
-        football (#KeepPounding), my first step was to evaluate who NFLViz is aimed toward. After reviewing several
-        football sites, data visualization sites, and having some informal conversations with various fantasy football
-        players, I classified 2 main users that we would want to target:</p>
-    </div>
-    <div class="md:mx-20 mx-5 md:grid md:grid-cols-2 md:gap-10">
-      <div class="mt-5">
-        <img src="img/JackMorrison_UXPersona.svg" alt="UX Persona 1">
-        <p class="text-sm text-blue-400 text-center">1. The young, tech-savvy fantasy football player who’s all about
-          stats. </p>
-      </div>
-      <div class="mt-5">
-        <img src="img/WarrenSmith_UXPersona.svg" alt="UX Persona 2">
-        <p class="text-sm text-blue-400 text-center">2. The veteran player who’s used to the trade.</p>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-      <p"><span class="font-bold text-blue-400">MAPPING OUT THE FLOW |</span> Keeping in mind the layouts of some
-        popular apps, we wanted our user flow to be simple. Data in general can be intimidating to deal with, so we
-        wanted to make sure our site exemplifies ease. With some feedback, I settled to create a more in-depth flow,
-        trying to minimize screens and pathways for the user.</p>
-    </div>
-    <div class="md:mx-20 mx-5">
-      <div class="mt-5">
-        <img class=" p-6" src="img/Mobile-Wireframe (1).svg" alt="Mobile Wireframe">
-        <p class="text-sm text-blue-400 text-center">Mobile Wireframe</p>
-      </div>
-      <div class="mt-5">
-        <img class="p-6 " src="img/Desktop-Wireframe (1).svg" alt="Desktop Wireframe">
-        <p class="text-sm text-blue-400 text-center">Desktop Wireframe</p>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md">
-      <p><span class="font-bold text-blue-400">DESIGN IDEAS |</span>Once we understood how we wanted the user to
-        navigate the site, I created some sample, lo-fi designs. </p>
-
-      <div class="md:mx-20 gap-0 grid grid-cols-2">
-        <div class="mt-5">
-          <img src="img/Design3.JPG" alt="Design3">
-        </div>
-        <div class="mt-5">
-          <img src="img/Design1.JPG" alt="Design1">
-        </div>
-
-      </div>
-      <p class="mt-5">When we took a look, we could see which features worked and which didn’t, which helped us see we
-        were heading in the right direction.</p>
-    </div>
-    </div>
-    <div class="mt-5 ">
-      <img class="mx-auto py-10 h-auto md:w-1/2" src="img/sampleformaldesignswhite.png" alt="Trial Designs">
-    </div>
-  </section>
-
-  <section>
-
-    <div class="mt-20 mx-5 md:mx-auto max-w-screen-md grid grid-cols-2">
-      <p class="font-bold text-2xl text-blue-400 place-self-center">Final Designs</p>
-      <img class="place-self-start border-l-2 pl-5 md:pl-10 border-blue-400" src="img/Design System.svg"
-        alt="Design System">
-    </div>
-
-
-  </section>
-  <section>
-    <p></p>
-    <div class="mt-5 md:mx-auto">
-      <iframe class="p-10 mx-auto w-screen h-screen"
-        src="https://marvelapp.com/prototype/9a2e6if?emb=1&iosapp=false&frameless=false" width="453" height="864"
-        allowTransparency="true" frameborder="0"></iframe>
-    </div>
-  </section>
-  <section>
-
-    <div class="mt-20 mb-20 mx-5 md:mx-auto max-w-screen-md">
-      <p><span class="font-bold text-blue-400">REFLECTION |</span> Working on my first UX/UI project taught me a lot
-        about the design process, particularly the importance of iteration and user feedback. It's one thing to look at
-        a product from a designer's perspective than a user's, which was really emphasized in this project.<br><br>
-
-        My definition of the word "research" truly expanded over the course of this project. While I would normally be
-        accustomed to reading scientific journals and talking to professors, my research for this project came directly
-        from aspects of my everyday life. Now, whenever I'm using an app or a webpage, I'm finding that I'm noticing
-        more and more details than I used to.<br><br>
-
-        My last and most important takeaway is understanding the field. Understanding how to make a universally
-        appealing design was challenging and not something I was used to. It really helped to make quick sketches and
-        show them to the developer, which both helped me understand more about the creation process and get direct
-        feedback.<br><br>
-
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Determining our Audience</h1>
+      <p class="my-6  md:text-lg">While I’m definitely not new to football (#KeepPounding), my first step was to evaluate who NFLViz is aimed toward. After reviewing several football sites, data visualization sites, and having some informal conversations with various fantasy football players, I classified 2 main users that we would want to target:
       </p>
-      <a class="text-blue-400 underline text-center" href="https://www.nflviz.com">Check out our latest designs on
-        NFLViz.com!</a>
+      <h2 class="font-semibold">User 1: The young, tech-savvy fantasy football player who's all about stats</h2>
+      <img class="p-6 my-6 bg-gray-100 rounded-lg" src="img/jackmorrison.png" alt="User 1 Persona: Jack Morrison">
+      <h2 class="font-semibold">User 2: The veteran player who's used to the trade</h2>
+      <img class="p-6 my-6 bg-gray-100 rounded-lg" src="img/warrensmith.png" alt="User 2 Persona: Warren Smith">
 
-
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Mapping out the Flow</h1>
+      
+      <p class="my-6 md:text-lg">Keeping in mind the layouts of some popular apps, we wanted our user flow to be simple. Data in general can be intimidating to deal with, so we wanted to make sure our site exemplifies ease. With some feedback, I settled to create a more in-depth flow, trying to minimize screens and pathways for the user.</p>
+        <img class="my-6 bg-gray-800 p-8 rounded-lg" src="img/Mobile-Wireframe.png" alt="mobile Wireframe">
+        <img class="my-6 bg-gray-800 p-8 rounded-lg" src="img/Desktop-Wireframe.png" alt="desktop Wireframe">
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Design Ideas</h1>
+      <p class="my-6 md:text-lg">Once we understood how we wanted the user to navigate the site, I created some sample, lo-fi designs.</p>
+      <div class="grid grid-cols-2">
+      <img class="my-6" src="img/Design1.JPG" alt="Sample lo-fi design">
+      <img class="my-6" src="img/Design3.JPG" alt="Sample lo-fi design">
     </div>
+      <p class="my-6 md:text-lg">When we took a look, we could see which features worked and which didn’t, which helped us see we were heading in the right direction.</p>
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Final Design</h1>
+      <img class="my-6 bg-gray-100  p-8 rounded-lg" src="img/NFLViz-designsystem.png" alt="NFLViz.com Design System">
+      
+      <p class="my-6 md:text-lg">Check out the prototype <a class="font-semibold undeline"
+          href="https://www.figma.com/proto/82PmrjyjHOQjpTn1xa9S0T/NFLViz-Webpage?node-id=197%3A2&scaling=min-zoom">here</a>
+        or below!</p>
+      <div class="grid grid-cols-1">
+        <iframe class="md:w-full mx-auto place-self-center" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F82PmrjyjHOQjpTn1xa9S0T%2FNFLViz-Webpage%3Fnode-id%3D197%253A2%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section>
+      <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Reflection</h1>
+      <p class="mb-36  my-6 md:text-lg">Working on my first UX/UI project taught me a lot about the design process, particularly the importance of iteration and user feedback. It's one thing to look at a product from a designer's perspective than a user's, which was really emphasized in this project.<br><br>
 
-  </section>
+        My definition of the word "research" truly expanded over the course of this project. While I would normally be accustomed to reading scientific journals and talking to professors, my research for this project came directly from aspects of my everyday life. Now, whenever I'm using an app or a webpage, I'm finding that I'm noticing more and more details than I used to.<br><br>
+        
+        My last and most important takeaway is understanding the field. Understanding how to make a universally appealing design was challenging and not something I was used to. It really helped to make quick sketches and show them to the developer, which both helped me understand more about the creation process and get direct feedback.<br><br>
 
+        <a class="font-semibold underline">Check out our latest designs on NFLViz.com!</a>
+      
+      </p>
+    </section>
 
+  </div>
 </body>
 
 </html>

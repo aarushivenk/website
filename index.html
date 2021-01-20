@@ -5,78 +5,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/tailwind.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=PT+Mono&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
   <title>Aarushi's Portfolio</title>
-  <link rel="shortcut icon" type="image/jpg" href="img/favicon1.ico"/>
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+  </style>
 </head>
-<body style="font-family:'Open Sans'" class="lg:text-lg">
-  <container class="mx:auto">
-    <header class="lg:py-10 lg:px-40 p-6 grid grid-cols-2">
-      <div class="grid grid-cols-2 justify-self-start">
-        <div class="">AARUSHI</div>
-      </div>
-      <a href="AarushiVenkatakrishnan_resume2021.pdf" class="justify-self-end">
-        resume
-      </a>
-    </header>
-  </container>
-  <container class="">
-<section class="lg:px-40 p-6">
-<div class="lg:grid lg:grid-cols-3 lg:gap-10">
-  <img class="place-self-center" src="img/aarushipfp.jpeg" alt="profile pic">
-  <div class="place-self-center lg:col-span-2">
-    <div class="text-2xl text-center lg:text-5xl mt-10 lg:mt-0 lg:text-left font-semibold lg:mb-10">Aarushi Venkatakrishnan</div>
-    <div class="text-lg p-3 lg:p-0 text-left lg:text-2xl lg:text-left">I’m an aspiring UX/UI designer with interests in health and wellness.<br><br>
 
-      I currently study biology and computer science at Duke University, where I’ve been busy taking charge of a reproductive health initiative, doing experiments on worms, and leading my dance team. <br><br>
-      
-      Two of my biggest passions are in the arts. I’m an avid doodler and a classically trained dancer. </div>
+<body style="font-family: Inter" class="antialiased">
+  <header style="font-family: PT Mono"
+    class="lg:px-16 text-base font-medium px-6 flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="index.html">
+        AARUSHI</a>
+    </div>
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <input type="checkbox" class="hidden" id="menu-toggle" />
+
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between  pt-4 lg:pt-0">
+          <li>
+            <a href="index.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">work</a>
+          </li>
+          <li>
+            <a href="art.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">art</a>
+          </li>
+          <li>
+            <a href="aboutme.html"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">me</a>
+          </li>
+          <li>
+            <a href="AarushiVenkatakrishnan_resume2021.pdf"
+              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">resume</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+    </div>
+  </header>
+
+  <div class="max-w-3xl mx-auto px-8 md:px-0 my-48">
+    <h1 class="text-4xl font-semibold text-center">Aarushi Venkatakrishnan</h1>
+    <h2 class="text-lg text-center my-6">Aspiring UX/UI Designer | Student Researcher at Duke University
+    </h2>
   </div>
+  <div class="grid grid-rows-2">
+    <div style="font-family: PT Mono" class="text-center mx-auto">featured projects</div>
+    <svg class="animate-bounce place-self-center w-6 h-6 xmlns=" http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+
+  <div class="px-4">
+    <div class="hover:shadow-lg bg-blue-50 max-w-3xl rounded-lg mx-auto my-16">
+      <div class="rounded-lg grid grid-cols-2">
+        <div class=" place-self-center text-xs lg:text-sm p-8 lg:p-16">
+          <a href="project-nflviz.html" class="cursor-pointer">
+          <p style="color:#031926; font-family: PT Mono" class="md:text-lg">01</p>
+          <h1 class="md:text-4xl text-2xl font-bold mb-2">NFLVIZ.COM</h1>
+          <h2 style="color:#031926; font-family: PT Mono"
+            class="font-medium mb-4   tracking-wide">Web Design and Branding</h2>
+          </a>
+        </div>
+        <div class="bg-blue-400 rounded-r-lg">
+          <img class="justify-self-end" src="img/nflvizmockup.png" alt="NFLViz mockup">
+        </div>
+      </div>
+
+    </div>
   
+    <div  class="hover:shadow-lg max-w-3xl rounded-lg mx-auto  my-16">
+      <div class=" bg-yellow-100 rounded-lg grid grid-cols-2">
+        <div class="bg-yellow-300 rounded-l-lg">
+          <img class=" justify-self-end" src="img/Chomp.png" alt="Chomp mockup">
+        </div>
 
-</div>
+        <div class=" place-self-center text-xs lg:text-sm p-8 lg:p-16">
+<a href="project-chomp.html" class="cursor-pointer">
 
-</section>
+          <p style="color:#031926; font-family: PT Mono" class="md:text-lg">02</p>
+          <h1 class="md:text-4xl text-2xl font-bold mb-2">CHOMP</h1>
+          <h2 style="color:#031926; font-family: PT Mono"
+            class="font-medium  mb-4 tracking-wide">UI design and UX Research</h2>
+          </a>
+        </div>
 
-  <section class="lg:px-40 p-6">
-    <div class="text-lg lg:text-4xl mb-6 font-semibold mt-10">Personal Projects</div>
-    <div >
-    <a href="project-pedometer.html" class="shadow-lg">
-      <div class="bg-red-400 grid grid-rows-2 shadow-lg">
-        <h1 class=" place-self-center text-xl lg:text-5xl font-bold text-white">Health and Wellness Apps</h1>
-        <img class=" align-bottom" src="img/HealthandWellnesscover.png" alt="health and wellness cover">
+
       </div>
-    </a>
-  </div>
- <div>
-    <a href="project-nflviz.html" class="h-1/3 shadow-lg">
-      <div class="mt-10 bg-blue-400 grid grid-cols-2 lg:p-40 p-8 ">
-        <h1 class="place-self-center text-xl lg:text-5xl font-bold text-white">NFLViz.com</h1>
-        <img src="img/NFLViz-Mockup.svg" alt="nflviz mockup">
-      </div>
-    </a>
-  </div>
-  </section>
-  <section class="p-6 lg:px-40">
-    <div class="text-lg lg:text-4xl mb-6 font-semibold">Artwork</div>
-    <a href="artwork.html" class="shadow-lg">
-      <div class="bg-green-500  grid grid-cols-2 shadow-lg">
-        <h1 class="place-self-center text-xl lg:text-5xl font-bold text-white">Paintings<br> and more</h1>
-        <img class="h-auto w-auto" src="img/IMG_3499.jpg" alt="personal portrait">
-      </div>
-    </a>
+    </div>
 
-    
-  </section>
-  
-</container>
+ 
+    <div class="hover:shadow-lg max-w-3xl rounded-lg mx-auto my-16 mb-36">
+      <div class=" bg-green-50 rounded-lg grid grid-cols-2">
+        <div class=" place-self-center text-xs lg:text-sm p-8 lg:p-16">
+          <a href="project-pedometerapps.html" class="cursor-pointer">
+          <p style="color:#031926; font-family: PT Mono" class="md:text-lg">03</p>
+          <h1 class="md:text-4xl text-xl font-bold mb-2">HEALTH APPS</h1>
+          <h2 style="color:#031926; font-family: PT Mono"
+            class="font-medium mb-4 tracking-wide">UX Research and Redesign</h2>
+            </a>
+        </div>
+        <div class="bg-green-600 rounded-r-lg">
+          <img class="content-end h-48 md:h-auto" src="img/stepsappmockup (1).png" alt="Health apps mockup">
+        </div>
+      </div>
+
+    </div>
+    </div>
 </body>
-
 
 </html>
