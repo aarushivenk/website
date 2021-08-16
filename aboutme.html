@@ -9,87 +9,110 @@
     rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
-  <title>About Me | Aarushi</title>
-  <style>
-    #menu-toggle:checked+#menu {
-      display: block;
-    }
-  </style>
+  <title>About</title>
 </head>
 
 <body style="font-family: Inter" class="antialiased">
-  <header style=" font-family: PT Mono"
-    class="lg:px-16 text-base font-medium px-6 flex flex-wrap items-center lg:py-0 py-2">
-    <div class="flex-1 flex justify-between items-center">
-      <a href="index.html">
-        AARUSHI</a>
-    </div>
-    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
-      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </label>
-    <input type="checkbox" class="hidden" id="menu-toggle" />
-
-    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-      <nav>
-        <ul class="lg:flex items-center justify-between  pt-4 lg:pt-0">
+  <header>
+    <div class="" id="menu">
+      <nav class="m-4">
+        <ul class="flex flex-row items-center justify-center md:justify-between">
+          <div>
+            <li class="hidden md:block ">
+              <a href="index.html" class="flex flex-row space-x-2 items-center">
+                <div class="h-5 w-5 bg-indigo-600 rounded-sm">
+                </div>
+               <p>aarushi venkatakrishnan</p>
+              </a>
+            </li>
+        </div>
+        <div class="flex flex-row items-center">
           <li>
             <a href="index.html"
-              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">work</a>
+            class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Work</a>
           </li>
           <li>
             <a href="art.html"
-              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">art</a>
+            class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Play</a>
           </li>
           <li>
             <a href="aboutme.html"
-              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">me</a>
+            class="py-2 px-4 text-center block border-b-2 border-transparent rounded-md font-semibold text-indigo-600 bg-purple-100"">About</a>
           </li>
           <li>
-            <a href="AV_resume.pdf"
-              class="lg:p-4 py-3 px-0 text-center block border-b-2 border-transparent hover:text-gray-400">resume</a>
+            <a href="AarushiVenkatakrishnan_Resume_2021.pdf"
+              class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Resume</a>
           </li>
+        </div>
         </ul>
       </nav>
 
     </div>
-
-
-    </div>
   </header>
-
-  <div class="max-w-3xl mx-auto px-8 md:px-0 mt-24 mb-48">
-    <div class="md:grid md:grid-cols-2">
-      <img class="rounded-lg p-8" src="img/me.jpeg">
-    <div>
-    <h1 class="md:text-4xl text-2xl font-semibold ">Hi, I'm Aarushi!</h1>
-    <h2 class="md:text-lg my-6">I’m an aspiring UX/UI designer with interests in health and wellness.<br><br>
-
-      I currently study biology and computer science at Duke University, where I’ve been busy taking charge of a reproductive health initiative, doing experiments on worms, and leading my dance team.<br><br>
-      
-      Two of my biggest passions are in the arts. I’m an avid doodler and a classically trained dancer.
-    </h2>
+  <div class="max-w-3xl mx-auto">
+<!-- Intro -->
+  <div class="mx-8 mt-12 mb-6">
+    <h1 class="md:text-4xl text-2xl font-bold">Hi, I'm Aarushi!</h1>
   </div>
-  
+
+  <!--Project List-->
+<div class="mx-8 md:flex md:flex-row">
+
+    <!--Project 1-->
+  <div class="md:text-base text-sm">
+    I’m an aspiring UX/UI designer with interests in health and wellness.
+    <br><br>
+    I currently study biology and computer science at Duke University, where I’ve been busy taking charge of a reproductive health initiative, doing experiments on worms, and leading my dance team.
+    <br><br>
+    Two of my biggest passions are in the arts. I’m an avid doodler and a classically trained dancer.
+    </div>
+
+<img class="h-auto max-h-64 w-auto md:w-1/2 my-10 md:my-0 md:mx-4 shadow-sm rounded-md" src="img/Aarushi-profile.jpeg" alt="Profile image of Aarushi in a black shirt">
+
 </div>
-    <div style="color:#031926; font-family: PT Mono" class="text-center mx-auto my-12 ">publications</div>
-    <ul class="list-disc my-6">
-      <li>Venkatakrishnan, A., Holzknecht, Z. E., Holzknecht, R., Bowles, D. E., Kotzé, S. H., Modliszewski, J. L., & Parker, W. Evolution of bacteria in the human gut in response to changing environments: an invisible player in the game of health. Computational and Structural Biotechnology Journal. doi: 10.1016/j.csbj.2021.01.007.
-      </li>
-      <li>Venkatakrishnan, A., Sarafian, J., Jirků-Pomajbíková, K. & Parker, W. (2020) Socio-medical studies of individuals self-treating with helminths suggest that most clinical trials assessing helminth therapy may be designed to fail. Preprints, 202012.0340  doi:10.20944/preprints202012.0340.v1
-      </li>
 
-    </ul>
-    
-  </div>
-  <div>
-   
-    
-  </div>
+<div class="mx-8">
+<h2 class="text-gray-400 text-lg mt-8 mb-4 font-bold">EXPERIENCES</h2>
+<div class="space-y-4">
+  <div class="my-4">
+  <h3 class="font-bold">UX Intern @ Duke University’s Creative User Experience Team</h3>
+  <p class="text-sm">JUN 2021 - Present</p>
+</div>
+<div class="my-4">
+  <h3 class="font-bold">UX Freelancer @ FTN Fantasy</h3>
+  <p class="text-sm">MAY 2021 - Present </p>
+</div>
+<div class="my-4">
+  <h3 class="font-bold">Intern @ Duke University Code+ Program</h3>
+  <p class="text-sm">JUN 2021 - AUG 2021 </p>
+</div>
+<div class="my-4">
+  <h3 class="font-bold">Communications Team Lead and Student Advisory Board Chair @ Duke Center for Global Reproductive Health</h3>
+  <p class="text-sm">OCT 2019 - Present</p>
+</div>
+<div class="my-4">
+  <h3 class="font-bold">Research Assistant @ Duke Medical Center’s Immune Dysfunction and Evolutionary Mismatch Lab</h3>
+  <p class="text-sm">OCT 2019 - JAN 2021</p>
+</div>
+</div>
+<h2 class="text-gray-400 text-lg  mt-8 mb-4 font-bold">CAMPUS ACTIVITIES</h2>
+<div class="space-y-4">
+  <div class="my-4">
+  <h3 class="font-bold">2020-21 Captain @ Duke Lasya, Indian Classical Dance Team</h3>
+  <p class="text-sm">SEP 2019 - Present</p>
+</div>
+<div class="my-4">
+  <h3 class="font-bold">Volunteer for Adopt-A-Grandparent</h3>
+  <p class="text-sm">SEP 2019 - MAY 2020</p>
+</div>
+</div>
 
-  </div>
-  </div>
+</div>
+</div>
+<div class="text-center text-gray-400 my-16">
+  © Aarushi Venkatakrishnan 2021
+</div>
+
 </body>
 
 </html>
