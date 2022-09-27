@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+  const dropdownButton = document.querySelector("#dropdown");
+  const dropdownList = document.querySelector("#dropdown + div.hidden");
+
+  dropdownButton.addEventListener("click", () => {
+    dropdownList.classList.toggle("hidden");
+  });
+
+</script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,28 +61,58 @@
 
     </div>
   </header>
-  <div class="max-w-3xl mx-auto">
+  <div class="md:mx-auto md:max-w-3xl mx-8 ">
     <!-- Intro -->
-    <div class="mx-8 mt-12 mb-6">
-      <h1 class="md:text-4xl text-2xl font-bold">Hi, I'm Aarushi!</h1>
-    </div>
 
-    <!--Project List-->
-    <div class="mx-8 md:flex md:flex-row">
+    <!--Top Section-->
+    <div class=" mx-auto items-center mt-12 flex flex-row space-x-6">
 
-      <!--Project 1-->
-      <div class="md:text-base text-sm">
-        I’m an aspiring UX/Product designer with interests in health and wellness.
+      <!--Intro-->
+      <div class="sm:w-3/5 text-lg">
+        <h1 class="md:text-4xl mb-6 text-2xl font-bold">Nice to meet you!</h1>
+        I’m <span class="text-indigo-600 font-bold">Aarushi Venkatakrishnan</span> - a UX/Product Designer
+        finishing up
+        my senior
+        year at Duke University, studying
+        Computer Science, Biology,
+        and Visual Media Studies.
         <br><br>
-        I'm majoring in Computer Science with minors in Biology and Visual Media Studies at Duke University, but I'm
-        currently
-        abroad studying Game Development in Copenhagen, Denmark!
-        <br><br>
-        Two of my biggest passions are in the arts. I’m an avid doodler and a classically trained dancer.
+        This website combines some case studies, passion projects, and hobbies. Explore! I hope you have fun seeing what
+        I’ve been up to, and I’m happy to share more upon request.
+        <div class="p-8 space-y-4 flex flex-col sm:hidden">
+          <img class="rounded-lg border-4 border-indigo-300" src="img/apple-farm.jpg"
+            alt="Image of Aarushi in a cream shirt and blue jeans next to an apple tree">
+          <div class="text-sm text-center">At an apple orchard in Copenhagen, Denmark where I’m studying
+            abroad for the
+            semester.</div>
+
+        </div>
+
+
       </div>
-
-      <img class="h-auto max-h-64 w-auto md:w-1/2 my-10 md:my-0 md:mx-4 shadow-sm rounded-md"
-        src="img/Aarushi-profile.jpeg" alt="Profile image of Aarushi in a black shirt">
+      <div class="sm:w-2/5 hidden sm:flex sm:flex-col w-full h-auto sm:mt-4 space-y-4">
+        <img class="rounded-lg border-4 border-indigo-300" src="img/apple-farm.jpg"
+          alt="Image of Aarushi in a cream shirt and blue jeans next to an apple tree">
+        <div class="text-sm text-center">At an apple orchard in Copenhagen, Denmark where I’m studying
+          abroad for the
+          semester. </div>
+      </div>
+    </div>
+    <div class="my-16 py-8 md:px-16 px-8 bg-indigo-600 rounded-md text-white">
+      <h2 class="text-center tracking-widest uppercase text-xl font-bold">Fun facts</h2>
+      <br>
+      My name means “the first rays of sun,” and I am
+      absolutely an early-bird.
+      <br><br>
+      I can wiggle my ears. But I can’t raise one eyebrow at a time (though I’ve tried...)
+      <br><br>
+      I’ve made it a goal to learn 20 new dishes by the end of the year. Check in to see how I’m doing. Or if you have
+      any vegetarian recipes.
+      <br><br>
+      I have a huge sweet tooth. Right now, I’m loving kanelsnegles (Danish cinammon snails/buns).
+      <br><br>
+      I think everyone should have an idea book - a book to keep by their bedside to jot down all the ideas they have.
+      Mine is filled with illustration ideas and fun DIYs to try.
 
     </div>
   </div>
