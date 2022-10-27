@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- import AOS from 'aos';
+import 'aos/dist/aos.css'; -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/tailwind.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Public+Sans:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Splits Tool | Aarushi</title>
+
+</head>
+
+<body style="font-family: Arimo" class="antialiased bg-purple-50">
+  <header class="bg-white py-4">
+    <div class="max-w-5xl mx-auto" id="menu">
+      <nav class="">
+        <ul class="flex flex-row items-center justify-center md:justify-between">
+          <div>
+            <li class="hidden md:block ">
+              <a href="index.html" class="flex flex-row space-x-2 items-center">
+                <div class="h-5 w-5 bg-indigo-600 rounded-sm">
+                </div>
+                <p>aarushi venkatakrishnan</p>
+              </a>
+            </li>
+          </div>
+          <div class="flex flex-row items-center">
+            <li>
+              <a href="index.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent rounded-md font-semibold text-indigo-600 bg-purple-100">Work</a>
+            </li>
+            <li>
+              <a href="art.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Play</a>
+            </li>
+            <li>
+              <a href="aboutme.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">About</a>
+            </li>
+            <li>
+              <a href="AarushiVenkatakrishnanResume2023.pdf"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Resume</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <div class="max-w-5xl mx-auto bg-white rounded-md md:my-12">
+    <div class="bg-purple-900 md:rounded-t-md grid grid-cols-2 py-20">
+      <div class="mx-5 place-self-center">
+        <h1 class="lg:text-8xl text-4xl font-semibold text-white ">Splits Tool</h1>
+        <h2 class="font-medium md:text-lg my-4 text-white">Redesigning a tool to help you win your fantasy league.
+        </h2>
+      </div>
+      <img class="place-self-center px-6 rounded-lg" src="img/Splits_v2.png"
+        alt="AirBnB mockup of wishlists on a tilted phone">
+    </div>
+    <div class="max-w-3xl mx-auto px-8 md:px-0 my-16">
+      <p class="text-lg"> The NFL Splits tool is available to FTN Network Premium members. It is used to help users
+        understand how teams and players have performed in previous years. We performed a redesign primarily to improve
+        the visual design and increase usability, especially for users who have less football proficiency.
+      </p>
+      <!--Roles-->
+      <!-- <div class="grid md:grid-cols-2 grid-row-4 gap-4 py-4">
+        <div>
+          <div class="font-semibold md:text-lg">PURPOSE</div>
+          <div class="md:text-lg">Personal Project</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TEAM</div>
+          <div class="md:text-lg">Solo exploration</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TIMELINE</div>
+          <div class="md:text-lg">1 week (Sep 2022)</div>
+        </div>
+        <div>
+          <div class=" md:text-lg font-semibold">TOOLS</div>
+          <div class="md:text-lg">Figma</div>
+        </div>
+      </div> -->
+      <div class="grid md:grid-cols-4 grid-row-4 gap-4 py-6">
+        <div>
+          <div class="md:text-lg font-semibold">ROLE</div>
+          <div class="md:text-lg ">UX/UI Designer</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TEAM</div>
+          <div class="md:text-lg ">Developer: Advaith Venkatakrishnan</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TIMELINE</div>
+          <div class="md:text-lg ">4 months (May - Aug 2021)</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TOOLS</div>
+          <div class="md:text-lg ">Figma, HTML/CSS/JS, Storybook</div>
+        </div>
+
+      </div>
+      <hr class="my-4">
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Overview</h1>
+        <h2 class="text-2xl mt-6 mb-2">About FTN Network</h2>
+        <p class="my-6 md:text-lg"><a href="https://www.ftnfantasy.com/" class="text-blue-600 underline">FTN Network</a>
+          is a company cofounded in
+          2020 by Kevin Adams and Brad Evans, aiming to provide in-depth entertainment and analysis from
+          industry-leading
+          experts while developing unique user-friendly tools to help optimize user’s success on all fantasy platforms.
+          The tool we worked on
+          this summer is a part of their NFL tools section. I worked alongside a developer on three tools - the Splits
+          tool, the Pace tool, and the Wide Receiver vs. Cornerback (WR vs. CB) tool - to add new search/filter features
+          and simplify the user experience.</p>
+        <p class="my-6 bg-gray-100 p-6 text-center rounded-lg md:text-lg">“FTN brings you the best tools in the industry
+          to win your fantasy football championship.”
+        </p>
+        <p class="my-6 md:text-lg">It was such a transformative experience to be able to work on these tools throughout
+          the summer. Our goal was to transform key stats into easy to understand and approachable numbers that could
+          help anyone be at the top of their fantasy league. Throughout this project, I conducted competitor research to
+          identify gaps and opportunities and iterated through the design process to create the tools that are currently
+          live on the FTN sites (FTNFantasy.com, FTNdaily.com, and FTNbets.com).</p>
+        <h2 class="text-2xl mt-6 mb-2">About the Scope</h2>
+        <p class="my-6 md:text-lg">We revisited one of the first tools we made for FTN Network - the Splits Tool - with
+          new ideas ahead of the upcoming NFL season. The NFL Splits tool is available to FTN Network Premium members.
+          Its aim is to help users understand how teams and players have performed in previous years. We performed a
+          redesign primarily to improve the visual design and increase usability, especially for users who have less
+          football proficiency. We aimed to improve the design by adhering to a proposed style guide that will make for
+          a more consistent product. Adding more quality of life features will help acclimate first time users and
+          enable power users to do more. A new visualization to reveal insightful patterns, the ability to share, and
+          new table settings are just a few of the new ideas we wanted to bring. The Splits Tool v1 laid the foundation,
+          v2 takes it to the next level.
+        </p>
+        <h2 class="text-2xl mt-6 mb-2">Our Stakeholders</h2>
+        <p class="my-6 md:text-lg">For the duration of the summer, we closely worked with <a
+            href="https://twitter.com/EliotCrist?s=20" class="text-blue-600 underline">Eliot
+            Crist</a>, the COO/CTO of FTN Network.</p>
+      </section>
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Research</h1>
+        <h2 class="text-2xl mt-6 mb-2">Setting the Scope</h2>
+        <p class="my-6 md:text-lg">Our first step to begin this project was to do a deep dive on the current version of
+          the Splits Tool and identify areas of improvement.</p>
+        <div data-aos="fade-up" class="text-center">
+          <img src="img/SplitsToolv1.png" alt="Brainstormed Pain Points" class="w-3/4 mx-auto">
+          <p class="text-sm text-gray-600 text-center">The Splits Tool v1 at first glance</p>
+        </div>
+        <p class="my-6 md:text-lg">We categorized all of the changes we hoped to make and prioritized them based on
+          usability, time to complete, and reusability. The sections we focused on were new features,
+          design - including usability, differentiators, bells & whistles, and bug fixes.</p>
+        <h2 class="text-2xl mt-6 mb-2">Users and Audience</h2>
+        <p class="my-6 md:text-lg">We identified two types of users that we saw were most likely to be using this tool.
+        </p>
+        <ul class="grid grid-cols-2 gap-4">
+          <li>
+            <span class="font-semibold text-lg">Existing Users: Football Enthusiasts</span><br>
+            They never miss a game and always review their stats.
+          </li>
+          <li>
+            <span class="font-semibold text-lg">New Users: Casual watchers and Fantasy players</span><br>
+            People with an interest in football and is in a fantasy league. They want to level up in an easy and
+            low-cost way.
+
+          </li>
+        </ul>
+      </section>
+
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Our Goal</h1>
+        <h1 class="mt-6 p-12 text-center rounded-md bg-purple-200 md:text-2xl text-xl font-semibold">Redesign
+          the split tool to allow for new users and existing users have a seamless user experience as they use this tool
+          to help with their fantasy teams.</h1>
+        <p class="my-6 md:text-lg">Referring back to our original wireframes and mockups, we adjusted and presented our
+          new idea that incorporates old elements and new ones as well.</p>
+        <div class="grid grid-cols-2">
+          <img src="img/OGSplitWireframe.png" class="place-self-center  h-96" alt="Original Split Wireframe">
+          <img src="img/SplitsV1-FirstStage.jpeg" class="place-self-center h-96"
+            alt="First ever iteration of the Splits Tool">
+        </div>
+        <p class="my-6 md:text-lg">New notable features introduced were (1) the ability to copy the url containing the
+          split, which would make it easier for users to share the split with others, (2) a parallel coordinates
+          visualization that allows users to look at the individual game data to identify patterns or abnormalities, and
+          (3) introducing trending cards to highlight on one hand, interesting players/teams to watch, and on the other
+          hand, sample uses of the tool.</p>
+      </section>
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Design Process </h1>
+        <h2 class="text-2xl mt-6 mb-2">Preliminary Mockups</h2>
+        <p class="my-6 md:text-lg">Based on our identified areas of improvement, we created new screens to present to
+          our stakeholder.
+        </p>
+        <div data-aos="fade-up" class="grid grid-cols-2 mx-auto">
+          <img src="img/Splits Home.png" alt="Proposed Splits Home" class=" p-4 mx-auto">
+          <img src="img/Customize Display Stats.png" alt="New Customized Display Stats" class="p-4 mx-auto">
+        </div>
+        <img src="img/Parallel Coordinates Graph.png" alt="Parallel Coordinates Graph" class="p-4 w-1/2 h-auto mx-auto">
+
+        <p class="text-sm text-gray-600 text-center">Initial Mockups shared with the FTN Team for the start of the
+          redesign.</p>
+        <h2 class="text-2xl mt-6 mb-2">Component Library
+        </h2>
+        <p class="my-6 md:text-lg">After agreeing on the direction to take the redesign, we worked on the development of
+          each individual component of the design.
+
+        </p>
+        <div data-aos="fade-up" class="bg-gray-100 py-4">
+          <img src="img/TrendingCards.png" alt="Trending Cards Design" class=" w-3/4 mx-auto">
+        </div>
+        <div class="bg-gray-100 py-4">
+          <img src="img/PlayerFilter.png" alt="Player Filter Design" class="w-3/4 mx-auto">
+        </div>
+        <p class="text-sm text-gray-600 text-center py-6">Sample iterations of different components. </p>
+        <h2 class="text-2xl mt-6 mb-2">User Testing
+        </h2>
+        <p class="my-6 md:text-lg">As we started to put the components together and refine the combined project, we then
+          moved on to usability testing. We asked 3 users to do an in-depth survey of our tool. Namely, we wanted to see
+          if our changes helped first-time users understand how to navigate the different types of filters. We asked
+          questions like:
+        </p>
+        <ul class="pl-6 list-disc list-inside">
+          <li>
+            Compare the Carolina Panthers TDs at home vs away.
+          </li>
+          <li>
+            How do the Panthers do with Christian McCaffery vs. without him?
+          </li>
+          <li>
+            Compare Julio Jones's 2019 performance with 2020.
+          </li>
+        </ul>
+        <p class="my-6 md:text-lg">We found major commonalities between the users. The number one request was for a
+          hierarchy to help users
+          understand what they should do first. Because of this, we revisted our designs and reworked how we displayed
+          filters into a "stepper": a visual depiction of a process to guide users through creating a split.
+          <br><br>
+          I created two versions of this stepper, one being vertical which would adapt well across different device
+          sizes,
+          and horizontal, which helps draw the user's attention to the filter process from the beginning.
+        </p>
+        <div data-aos="fade-up" class="grid grid-cols-2 space-x-4">
+          <img src="img/HL-Step2 (1).png" alt=" Horizontal Stepper">
+          <img src="img/VL=Step2.png" alt="Vertical Stepper">
+        </div>
+        <p class="text-sm text-gray-600 text-center py-6">The mockups for a horizontal stepper (left) and vertical
+          stepper
+          (right). </p>
+        <p class="my-6 md:text-lg">We went back to our initial group of users and presented the new designs to them, in
+          additional to the
+          working
+          model. We got positive feedback that the stepper helped make the tool more clear, and we worked to clean up
+          the
+          unclear language as well add instructions in relevant locations. Some users had preferences for the horizontal
+          stepper, whereas others had a preference for the vertical stepper. Given the time constraints of our project,
+          we
+          chose to move forward with the vertical design to focus on responsivity first. </p>
+      </section>
+
+      <section data-aos="fade-up">
+        <h1 class="mt-16 mb-6 md:text-4xl text-2xl font-semibold">Final Design</h1>
+        <video data-aos="fade-up" controls autoplay loop>
+          <source src="img/TrendingCards_Splits.mov">
+        </video>
+        <p class="text-sm text-gray-600 text-center pb-6">Trending Cards at the top of the screen indicate interesting
+          Splits
+          to look at and come premade with filters.</p>
+        <video data-aos="fade-up" controls autoplay loop>
+          <source src="img/CarolinaPanthers_VerticalStepper.mov">
+        </video>
+        <p class="text-sm text-gray-600 text-center pb-6">The improved stepper helping users understand how to select
+          their split.</p>
+        <video data-aos="fade-up" controls autoplay loop>
+          <source src="img/CMC-VisualizationDemo.mov">
+        </video>
+        <p class="text-sm text-gray-600 text-center pb-6">The new visualization that helps users identify any irregular
+          patterns while looking at the entire, non-aggregated data.</p>
+      </section>
+
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Reflection</h1>
+        <div class="pb-36">
+          <p class="my-6 md:text-lg">Seeing this project from where it first started last year, with the first iteration
+            of the splits tool, to now where it is now is very rewarding. Both from a visual standpoint and a utility
+            standpoint, users and stakeholders agree that it is a significant level-up from the previous version.
+            <br><br>
+            This project really helped me break down assumptions. Working with a group of users who are extremely
+            knowledgeable about the field of football, there was a lot for me to learn. Having those opportunities to
+            hear from real-life/real-time users of the app was beneficial, as we were able to use their feedback to make
+            major changes to the tool before its launch.
+          </p>
+          <h2 class="text-2xl mt-6 mb-2">Next Steps</h2>
+          <p class="my-6 md:text-lg">We're continuously releasing weekly updates to each tool, with a plan to continue
+            iterating on our design throughout the 2021-2022 NFL season. As more data comes and as more users frequent
+            the site, we hope to better understand how to help users find the information they need in the best way
+            possible.</p>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 60, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+  </div>
+  <div class="text-center mt-16 py-16 space-y-6 flex flex-col">
+    <p class="text-xl md:text-2xl font-medium">Get in touch, let's grow together.</p>
+    <!-- Social Icons -->
+    <div class="flex flex-row items-center justify-center space-x-8 mt-4 mb-12 md:mb-24">
+
+      <div>
+        <a href="https://www.linkedin.com/in/aarushi-venkatakrishnan/" class="">
+
+
+          <p class="hover:underline">Connect on LinkedIn</p>
+        </a>
+      </div>
+      <div>
+        <a href="mailto: aarushi.venkatakrishnan@duke.edu" class="">
+
+          <p class="hover:underline">Send me an email</p>
+        </a>
+      </div>
+
+    </div>
+    <p class="pt-8">© Aarushi Venkatakrishnan 2022</p>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/tailwind.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Public+Sans:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>ReView | Aarushi</title>
+
+</head>
+
+<body style="font-family: Arimo" class="antialiased bg-gray-100">
+  <header class="bg-white py-4">
+    <div class="max-w-5xl mx-auto" id="menu">
+      <nav class="">
+        <ul class="flex flex-row items-center justify-center md:justify-between">
+          <div>
+            <li class="hidden md:block ">
+              <a href="index.html" class="flex flex-row space-x-2 items-center">
+                <div class="h-5 w-5 bg-indigo-600 rounded-sm">
+                </div>
+                <p>aarushi venkatakrishnan</p>
+              </a>
+            </li>
+          </div>
+          <div class="flex flex-row items-center">
+            <li>
+              <a href="index.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent rounded-md font-semibold text-indigo-600 bg-purple-100">Work</a>
+            </li>
+            <li>
+              <a href="art.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Play</a>
+            </li>
+            <li>
+              <a href="aboutme.html"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">About</a>
+            </li>
+            <li>
+              <a href="AarushiVenkatakrishnanResume2023.pdf"
+                class="py-2 px-4 text-center block border-b-2 border-transparent hover:text-indigo-600">Resume</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <div class="max-w-5xl mx-auto bg-white rounded-md md:my-12">
+    <div class="bg-gray-500 md:rounded-t-md grid grid-cols-2 py-12 md:py-16">
+      <div class="mx-5 place-self-center">
+        <h1 class="lg:text-8xl text-4xl font-semibold text-white ">ReView</h1>
+        <h2 class="font-medium md:text-lg my-4 text-white">An easy way to organize class
+          recordings.</h2>
+      </div>
+      <img class="place-self-center" src="img/Device - Macbook Air.png"
+        alt="AirBnB mockup of wishlists on a tilted phone" class="px-5">
+
+    </div>
+    <div class="max-w-3xl mx-auto px-8 md:px-0 my-16">
+      <p class="text-lg"> This summer, I had the opportunity to work with a team of four other Duke students to
+        improve how we use Zoom for education. The project spanned 10 weeks from scope definition to concept testing.
+      </p>
+      <!--Roles-->
+      <!-- <div class="grid md:grid-cols-2 grid-row-4 gap-4 py-4">
+        <div>
+          <div class="font-semibold md:text-lg">PURPOSE</div>
+          <div class="md:text-lg">Personal Project</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TEAM</div>
+          <div class="md:text-lg">Solo exploration</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TIMELINE</div>
+          <div class="md:text-lg">1 week (Sep 2022)</div>
+        </div>
+        <div>
+          <div class=" md:text-lg font-semibold">TOOLS</div>
+          <div class="md:text-lg">Figma</div>
+        </div>
+      </div> -->
+      <div class="grid md:grid-cols-4 grid-row-4 gap-4 py-6">
+        <div>
+          <div class="md:text-lg font-semibold">ROLE</div>
+          <div class="md:text-lg ">UX/UI Designer, Frontend Developer</div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TEAM</div>
+          <div class="md:text-lg ">Duke Code+ <br>
+            <span class="text-sm md:text-base">(Helen Xu, Akash Mullick, Benjamin Asomani, Alice Wu)</span>
+          </div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TIMELINE</div>
+          <div class="md:text-lg ">10 weeks (Jun 2021 - Aug 2021)
+          </div>
+        </div>
+        <div>
+          <div class="md:text-lg font-semibold">TOOLS</div>
+          <div class="md:text-lg ">Figma, Python, Postgres, HTML/CSS/JS</div>
+        </div>
+
+      </div>
+      <hr class="my-4">
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Overview</h1>
+        <h2 class="text-2xl mt-6 mb-2">About the Program</h2>
+        <p class="my-6 md:text-lg">Over the past year, Zoom has played an integral role in everyday communications at
+          Duke and across the globe. Utilizing mobile technology and the Zoom Developer Platform, we worked with Duke
+          OIT and other partners across campus to develop a web app to evolve Zoom’s presence and capabilities within
+          higher education.</p>
+        <p class="my-6 bg-gray-100 p-6 text-center rounded-lg md:text-lg">There are currently 40,000 licensed users at
+          Duke who, during the month of April, held between 8,000 and 10,000 meetings a day.</p>
+        <h2 class="text-2xl mt-6 mb-2">About the Scope</h2>
+        <p class="my-6 md:text-lg">We were tasked with developing an educational app that further enhances the
+          collaborative efforts between instructors and students, as well as opening the door to new resources
+          supporting education. With almost a full year of hindsight available, we can begin to fill in the gaps of
+          where Zoom can be improved to meet Duke’s needs of providing a hybrid/remote teaching and learning
+          experience that rivals that of an in-person offering.</p>
+        <h2 class="text-2xl mt-6 mb-2">Our Stakeholders:</h2>
+        <p class="my-6 md:text-lg">For our project, we regularly communicated with our three stakeholders:</p>
+        <ul class="pl-6 list-decimal list-inside">
+          <li>
+            <span class="font-semibold">Jeremy Petranka</span>, the Assistant Dean of the Master of Quantitative
+            Management (MQM) and Master of Management Studies (MMS) programs at the Fuqua School of Business, Duke
+            University
+          </li>
+          <li>
+            <span class="font-semibold">Charley Kneifel</span>, the Chief Technology Officer (CTO) at OIT
+          </li>
+          <li>
+            <span class="font-semibold">Chris Lorch</span>, a Learning Technology Analyst from Duke Learning
+            Innovation
+          </li>
+        </ul>
+        <p class="mt-6 md:text-lg">As we developed our project, they gave us feedback on our project scope, use cases,
+          and
+          designs.</p>
+      </section>
+      <section data-aos="fade-up space-y-4">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Research</h1>
+        <h2 class="text-2xl mt-6 mb-2">Understanding the Scope</h1>
+          <p class="my-6 md:text-lg">
+            At the start of our project, our initial guidance was to create a web app that could improve the
+            capabilities
+            of Zoom for education. Within our team, we brainstormed potential avenues that we could explore. We also
+            met
+            with
+            our stakeholders to evaluate what they deem to be the potential areas of improvement. </p>
+          <div class="text-center">
+            <img data-aos="fade-up" src="img/Brainstormed-pain-points.png" alt="Brainstormed Pain Points"
+              class="w-3/4 mx-auto">
+            <p class="text-sm text-gray-600 text-center mb-6">Some of the ideas we were considering as we thought
+              about
+              common
+              pain points
+              users have experienced with Zoom.</p>
+          </div>
+          <p class="my-6 md:text-lg">
+            After receiving this
+            information, we narrowed down our ideas to only the most relevant and sorted them based on feasibility.
+            From
+            this, we were able to identify our problem for the summer:
+          </p>
+          <p class="my-6 bg-gray-100 p-6 text-center rounded-lg md:text-lg">It's difficult to navigate through and
+            find the right Zoom recording.</p>
+          <ul class="lg:grid lg:grid-cols-3 lg:gap-4">
+            <li>
+              <span class="font-semibold">1. Lack of context</span>: <br>Recordings are only titled by the
+              meeting name and
+              date.
+              When using a recurring meeting, all recordings will have the same title
+            </li>
+            <li>
+              <span class="font-semibold">2. Lack of organization</span>: <br>It's difficult to arrange
+              zoom recordings and
+              course
+              content in the same place.
+            </li>
+            <li>
+              <span class="font-semibold">3. Lack of search features</span>: <br>Most of the time, the
+              fastest way to find the
+              video you're looking for is when you already have the video in mind. Otherwise, it's a lot of trial and
+              error.
+            </li>
+          </ul>
+          <br>
+          <h2 class="text-2xl mt-6 mb-2"">Users and Audience</h1>
+              <p class=" my-6 md:text-lg">
+            We identified six types of users that could potentially benefit from an educational recording management
+            tool.
+            </p>
+            <ul class=" grid grid-cols-2 lg:grid-cols-3 gap-4">
+              <li>
+                <span class="font-semibold text-lg">Student 1</span>: <br>
+                Studies regularly and frequently asks questions about the material
+              </li>
+              <li>
+                <span class="font-semibold text-lg">Student 2</span>: <br>
+                Studying for an exam and gets questions about some specific topics wrong repeatedly
+              </li>
+              <li>
+                <span class="font-semibold text-lg">Student 3</span>: <br>
+                Too busy with classes and other commitments, tends to be the one cramming the days before an exam
+              </li>
+
+              <li>
+                <span class="font-semibold text-lg">Teacher 1</span>: <br>
+                Sees a lot of redundancy in own teaching strategy and finds that students tend to ask the same sorts
+                of
+                questions
+              </li>
+              <li>
+                <span class="font-semibold text-lg">Teacher 2</span>: <br>
+                Needs help managing Zoom account and deciphering different recordings
+              </li>
+              <li>
+                <span class="font-semibold text-lg">Employee</span>: <br>
+                Attends meetings regularly and needs a better way to keep track of progress in different projects
+              </li>
+            </ul>
+            <p class="my-6 md:text-lg py-6">For our project, we decided to tailor our app to Student 1 <span
+                class="font-semibold">(Nina)</span>
+              and
+              Student 2 <span class="font-semibold">(Owen)</span>.
+            </p>
+
+            <img data-aos="fade-up" src="img/Nina.png" alt="User Persona for Nina" class="w-2/3 pb-6 mx-auto">
+            <p class="text-sm text-center text-gray-600 pb-12">Nina is an undergraduate student majoring in
+              Neuroscience who
+              needs a fast method to search through videos so she can complete notes she missed during class. </p>
+            <img data-aos="fade-up" src="img/Owen.png" alt="User Persona for Owen" class="w-2/3 pb-6 mx-auto">
+            <p class="text-sm text-center text-gray-600 pb-6">Owen is an undergraduate student majoring in Computer
+              Science
+              who
+              needs an easier way to find the lecture he needs so he can study more effectively for upcoming exams.
+            </p>
+            <h2 class="text-2xl mt-6 mb-2">User Surveys</h1>
+              <p class="my-6 md:text-lg">
+                To validate our scope and understand potential solutions, we conducted a survey of the Duke
+                undergraduate
+                student body and received 19 responses. Our hypotheses were that:
+              </p>
+              <ul class="pl-6 py-6">
+                <li>
+                  A) Students find watching course
+                  recordings useful
+                </li>
+                <li>
+                  B) Students watch course recordings to study, not just as a way to skip live sessions
+                </li>
+                <li>
+                  C) Students felt that the current way of sorting through recordings is time-consuming and difficult
+                </li>
+              </ul>
+
+
+              <p class="my-6 md:text-lg">
+                At a high-level, we saw that students were accustomed to watching recordings from their Zoom lectures
+                for
+                a variety of purposes, including studying and making up missed lectures.
+                <br><br>
+              <div data-aos="fade-up" class="lg:grid lg:grid-flow-col">
+                <img src="img/Survey-Zoom-usefulrecordings.png"
+                  alt="Survey results showing 47.4% of participants strongly agreed that Zoom recordings were useful">
+                <img>
+                <img src="img/Survey-Zoom-losemotivation.png"
+                  alt="Survey results showing 57.9% of participants agreed/strongly agreed that they lose motivation to watch recordings if they can't find what they're looking for">
+                <img>
+              </div>
+              We also asked questions to gauge what would be better for students and how willing they would be to
+              contribute to a solution.
+              </p>
+              <br class="hidden lg:block"><br>
+              <div data-aos="fade-up" class="lg:grid lg:grid-flow-col">
+                <img src="img/Survey-Zoom-easiertofind.png"
+                  alt="Survey results showing 68.4% of participants strongly agreed that recordings would be easier to find if titled">
+                <img>
+                <img src="img/Survey-Zoom-willingtoadd.png"
+                  alt="Survey results showing 68.4% of participants agreed/strongly agreed that they would be willing to add content to help themselves and other students">
+                <img>
+              </div>
+              <p class="my-6 md:text-lg">These results were somewhat surprising! While Duke currently has tools in
+                place like Piazza that
+                allow
+                students to collaborate and ask questions for each other and professors, we were unsure of how willing
+                they would be to add their own thoughts to lecture content. This result opened up possibilities for
+                our
+                future functionalities as we found that students would be more likely to find the recording they are
+                looking for if they have some identifying feature. </p>
+      </section>
+
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Solution</h1>
+        <p class="my-6 md:text-lg">We thought of some “How might we” questions and collaborated with our project leads
+          to brainstorm
+          solutions:
+        </p>
+        <ul class="pl-6">
+          <li>
+            <span class="font-semibold">How might we</span> help students understand their course material better with
+            limited time?
+          </li>
+          <li>
+            <span class="font-semibold">How might we</span> help instructors organize their content in one place?
+          </li>
+          <li>
+            <span class="font-semibold ">How might we</span> create a classification system of recordings with low
+            effort?
+          </li>
+        </ul>
+        <p class="my-6 md:text-lg">We also explored the current solutions in place, like the Zoom integration through
+          the Sakai LMS and
+          Panopto
+          which is a popular tool for managing videos, and indirect competitors like Piazza and Gong. What we saw was
+          there were common elements that made posts/videos stand out:
+        </p>
+        <ul class="pl-6 list-inside list-disc">
+          <li>
+            Title (which currently is just the Zoom meeting ID)
+          </li>
+          <li>
+            Date
+          </li>
+          <li>
+            Keywords (from Piazza, which allows you to tag posts into categories)
+          </li>
+        </ul>
+        <p class="my-6 md:text-lg">Through collaborative sessions, we decided on our question to be: <span
+            class="font-semibold">How might we
+            create a web-app that allows
+            students and instructors to easily categorize and navigate to previous
+            recordings?</span>
+        </p>
+        <p class="my-6 md:text-lg">Out of this question, we came up with Review.</p>
+
+        <h1 class="my-6 p-12 rounded-md bg-gray-200 md:text-xl text-lg font-semibold">ReView is a web
+          app that uses video transcripts to summarize class recordings and tag key topics to make
+          studying for tests and understanding material covered in each lecture easier with minimal effort by the
+          professor. ReView not only functions as a study tool, but as a way to help professors organize recording
+          content, make class materials more accessible, and create a way to increase engagement with course content.
+        </h1>
+        <p class="my-6 md:text-lg">By applying natural language processing on Zoom video transcripts we can
+          autogenerate summaries and
+          keywords.
+          Our web-app can then act
+          as a crowdsourcing platform to have students, the users, to update content, add their own notes, and watch
+          videos - all in the same place.</p>
+      </section>
+      <section data-aos="fade-up space-y-4">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Design Process</h1>
+        <h2 class="text-2xl mt-6 mb-2">Wireframes</h2>
+        <p class="my-6 md:text-lg">First, I sketched out the necessary components.</p>
+        <img data-aos="fade-up" src="img/Wireframes-Review.png" alt="Wireframes" class="mx-auto">
+        <br>
+        <h2 class="text-2xl mt-6 mb-2">Mockups</h2>
+        <p class="my-6 md:text-lg">After critiquing the wireframes as a group, we started generating lo-fi mockups to
+          better visualize our
+          app.
+        </p>
+        <div class="grid grid-cols-2 py-4">
+          <img data-aos="fade-up" class="h-96 w-auto mx-auto" src="img/Example Site 1.png" alt="Review Lo-fi mockups">
+          <img data-aos="fade-up" class="h-96 w-auto mx-auto" src="img/Example Site 2.png" alt="Review Lo-fi mockups">
+        </div>
+        <p class="my-6 md:text-lg">
+          With more feedback, we solidified our base design and moved on to hi-fi mockups to better represent our
+          designs.
+        </p>
+
+        <img data-aos="fade-up" class="pb-6" src="img/Group 33.png" alt="Review Hi-fi mockups">
+        <img data-aos="fade-up" src="img/Group 34.png" alt="Review Hi-fi mockups">
+
+        <p class="my-6 md:text-lg">As we were inputting and testing data with our prototype, we found that the table
+          was getting a bit long.
+          We
+          decided to add a second view, a card view, that’s common in similar services like Panopto or Notion. We also
+          experimented with different styles to better align with Duke's style guide.</p>
+        <br>
+        <img data-aos="fade-up" src="img/CardView-Review.jpg" alt="Mockup of Card View for Review"
+          class="h-1/2 w-3/4 mx-auto">
+        <h2 class="text-2xl mt-6 mb-2">Stakeholder Feedback</h2>
+        <p class="my-6 md:text-lg">From the faculty point of view, they’d like to see what students are doing on their
+          site. For us to
+          understand
+          that, we had to be able to implement roles - identification of the user into either a student or faculty.
+          This
+          insight adapted both the infrastructure and design of our app. </p>
+        <br>
+        <h2 class="text-2xl mt-6 mb-2">User Testing</h2>
+        <p class="my-6 md:text-lg">Using real-life data from youtube transcripts from a math class one of our team
+          members took in the spring
+          semester. We interviewed 11 students, asking them to give us their impressions of the app and complete a few
+          tasks. Some tasks included:
+        </p>
+        <ul class="pl-6 list-disc list-inside">
+          <li>
+            Find the title of a lecture that occurred on a specific date.
+          </li>
+          <li>
+            Indicate that a specific keyword is relevant to a lecture.
+          </li>
+          <li>
+            Add your own thoughts from the lecture to the recording page.
+          </li>
+        </ul>
+        <p class="my-6 md:text-lg">The results were surprising! Users were able to identify issues in flow (like the
+          navigation not having a
+          home
+          button) that we were unsure of, and supported design decisions like having a list view and a card view.
+          We also found that 45% of users would be more likely to edit a section called “Notes” than “Summary” because
+          a
+          summary is supposed to be a concise 1 or 2 sentence statement.
+        </p>
+        <p class="my-6 md:text-lg">Students also noted that they were unsure how to differentiate between
+          autogenerated content and teacher
+          approved content, which gave us more to think about. We took all the suggestions that came out of the user
+          testing and ranked them according to priority (which was determined partly by how many users ran into the
+          same
+          problem) and feasibility (how much effort it would take to implement the feature). We then systematically
+          addressed this feedback for the remaining time of our project.</p>
+      </section>
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Final Design</h1>
+        <p class="my-6 md:text-lg">View a short video describing our project below or watch our <a
+            class="text-blue-600 underline" href="https://youtu.be/YALuiHQmFeM">Code+ final
+            presentation!</a>
+        </p>
+        <iframe class="w-full h-96" src="https://www.youtube.com/embed/vbgM2eMPB0Y" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+
+      <section data-aos="fade-up">
+        <h1 class="mt-16 md:text-4xl text-2xl font-semibold">Reflection</h1>
+        <div class="pb-36">
+          <p class="my-6 md:text-lg">
+            As my first team project, I learned a tremendous amount from Code+. First and foremost, I learned a lot
+            about
+            cooperation with team members, which was an interesting challenge participating in this program through a
+            hybrid
+            environment (2 of our team members were on campus and the rest of us were remote). I also gained valuable
+            experience pacing our workload against a deadline.
+            <br><br>
+            Because this was one of the first projects I’ve had to scope out myself, I saw firsthand the importance of
+            prioritization. There were so many interesting and ambitious ideas that we had, especially with a
+            product
+            like Zoom that we’ve all become so accustomed to using, so it was definitely a challenge deciding which to
+            tackle first.
+            <br><br>
+            Despite our program only lasting 10 weeks, I felt as though we made incredible progress and learned so
+            much.
+            I’m
+            so thankful for the opportunity to work with my talented team, and I look forward to seeing our project
+            one
+            day
+            impact the Duke community!
+          </p>
+          <h2 class="text-2xl mt-6 mb-2">Next Steps</h2>
+          <p class="my-6 md:text-lg">For our app, we hope to respond to stakeholder and user feedback by implementing
+            multi-platform support and advanced admin features. We hope to continue doing more user testing with
+            longer 75-minute class data to evaluate the accuracy of our auto generated tags and summaries. We hope to
+            update our web app and beta test it in classes during the fall and spring semester to evaluate if it can
+            be used as an alternative to the current solution.</p>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 60, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+  </div>
+  <div class="text-center mt-16 py-16 space-y-6 flex flex-col">
+    <p class="text-xl md:text-2xl font-medium">Get in touch, let's grow together.</p>
+    <!-- Social Icons -->
+    <div class="flex flex-row items-center justify-center space-x-8 mt-4 mb-12 md:mb-24">
+
+      <div>
+        <a href="https://www.linkedin.com/in/aarushi-venkatakrishnan/" class="">
+
+
+          <p class="hover:underline">Connect on LinkedIn</p>
+        </a>
+      </div>
+      <div>
+        <a href="mailto: aarushi.venkatakrishnan@duke.edu" class="">
+
+          <p class="hover:underline">Send me an email</p>
+        </a>
+      </div>
+
+    </div>
+    <p class="pt-8">© Aarushi Venkatakrishnan 2022</p>
+
+  </div>
+</body>
+
+</html>

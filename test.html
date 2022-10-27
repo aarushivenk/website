@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>KindaCode.com</title>
+</head>
+
+<body>
+  <h1 class="my-4 text-center text-4xl">KindaCode.com</h1>
+  <h2 class="mb-10 text-center text-xl">Carousel Example</h2>
+
+  <!-- Implement the carousel -->
+  <div class="relative w-[500px] mx-auto">
+    <div class="slide relative">
+      <img class="w-full h-[500px] object-cover" src="img/bargraphsloth@300x-100.jpg">
+      <!-- <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower One Caption</div> -->
+    </div>
+
+    <div class="slide relative">
+      <img class="h-[500px] object-center" src="img/slothstatstree@300x-100.jpg">
+      <!-- <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Two Caption</div> -->
+    </div>
+
+    <div class="slide relative">
+      <img class="w-full h-[300px] object-cover"
+        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+      <!-- <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Three Caption
+      </div> -->
+    </div>
+
+    <!-- The previous button -->
+    <a class="absolute left-0 top-1/2 p-1 m-2 -translate-y-1/2  rounded-sm bg-black/20 hover:bg-black/50 text-gray-200 hover:text-white cursor-pointer"
+      onclick="moveSlide(-1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </a>
+
+    <!-- The next button -->
+    <a class="absolute right-0 top-1/2 p-1 m-2 -translate-y-1/2 rounded-sm bg-black/20 hover:bg-black/50 text-gray-200 hover:text-white cursor-pointer"
+      onclick="moveSlide(1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+
+  </div>
+  <br>
+
+  <!-- The dots -->
+  <div class="flex justify-center items-center space-x-5">
+    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+  </div>
+
+  <!-- Javascript code -->
+  <script>
+    // set the default active slide to the first one
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    // change slide with the prev/next button
+    function moveSlide(moveStep) {
+      showSlide(slideIndex += moveStep);
+    }
+
+    // change slide with the dots
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let i;
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName('dot');
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+
+      // hide all slides
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+      }
+
+      // remove active status from all dots
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('bg-indigo-600');
+        dots[i].classList.add('bg-gray-200');
+      }
+
+      // show the active slide
+      slides[slideIndex - 1].classList.remove('hidden');
+
+      // highlight the active dot
+      dots[slideIndex - 1].classList.remove('bg-gray-200');
+      dots[slideIndex - 1].classList.add('bg-indigo-600');
+    }
+  </script>
+</body>
+
+</html>
